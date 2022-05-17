@@ -46,7 +46,11 @@ setInterval(function (){
 
 function reset() {
     clicks = 0
+    cursor = 0
     document.getElementById("clicks").innerText = clicks
+    document.getElementById("cursorSaturn").innerText = cursor;
+    document.getElementById("cursorMars").innerText = cursor;
+    document.getElementById("cursorJupiter").innerText = cursor;
 }
 
 
