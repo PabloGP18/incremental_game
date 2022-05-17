@@ -9,6 +9,10 @@ color: whitesmoke;
     margin: 0;
     padding-bottom: 15px;
 }
+p{
+    display: flex;
+    align-items: center;
+}
 .container{
     display: flex;
     flex-flow: row wrap;
@@ -26,7 +30,6 @@ color: whitesmoke;
 
 .footer{
     padding-top: 150px;
-    height: 200px;
 }
 .aside1{
     align-items: center;
@@ -60,11 +63,16 @@ img:hover {
     margin-bottom: 50px;
 }
 button{
-
+    width: 30%;
+    padding: 10px;
     border-radius: 15px;
     border-color: whitesmoke;
     color: whitesmoke;
     background: transparent;
+    text-transform: capitalize;
+}
+#imgMars{
+    padding: 8px;
 }
 .main{
     height: 350px;
@@ -96,7 +104,7 @@ button{
     flex: 1;
 }
 }
-@media all and (min-width: 319px) and (max-width: 795px){
+@media all and (min-width: 319px) and (max-width: 799px){
 .container{
     display: flex;
     flex-direction: column;
