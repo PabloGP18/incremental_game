@@ -13,20 +13,24 @@
         <h1>Galaxy Clicker</h1>
     </header>
     <article class="main">
-        <img class="bigImage" src="moon-png-44673.png" alt="The moon" height="300px" width="300px" onclick="incr(1)">
+        <!-- Image where you have to click to increment clicks -->
+        <img class="bigImage" src="./Images/moon-png-44673.png" alt="The moon" height="300px" width="300px" onclick="incr(1)">
+        <!-- Button you have to click to reset all counters -->
         <button id="reset" value="Reset data" onclick="reset()">Reset</button>
     </article>
     <aside class="aside aside1">
-        <h2>Score</h2>
+        <h2>Galaxy Score</h2>
         <p>Galaxy clicks:<span id="clicks"> 0</span></p>
+        <!-- counter of the clicks per second -->
+        <p>Clicks per second: <span id="clickPerSecond">0</span></p>
     </aside>
     <aside class="aside aside2">
-        <h2>Multipliers</h2>
-        <p>Galaxy multipliers: </p>
-        <p>Buy Jupiter: <span id="costJupiter"> 15 clicks</span><img onclick="buyJupiter()" src="kisspng-display-resolution-image-file-formats-jupiter-png-photos-5a77ecc82d28e4.986704661517808840185.png" alt="Picture of Jupiter" height="50px" width="50px"><span id="cursorJupiter"> 0 (+1)</span></p>
-        <p>Buy Mars: <span id="costMars"> 100 clicks</span><img id="imgMars" onclick="buyMars()" src="mars-18087.png" alt="" height="30px" width="30px"><span id="cursorMars"> 0 (+5)</span></p>
-        <p>Buy Saturn: <span id="costSaturn"> 500 clicks</span><img id="imsaturn" onclick="buySaturn()" src="PikPng.com_saturn-png_513593.png" alt="" height="50px" width="50px"><span id="cursorSaturn"> 0 (+10)</span></p>
-
+        <h2>Galaxy Multipliers</h2>
+        <!-- All the planets and sun you can click and buy clicks and the counters  -->
+        <p>Buy Jupiter: <span id="costJupiter"> 15 clicks</span><img onclick="buyJupiter()" src="./Images/kisspng-display-resolution-image-file-formats-jupiter-png-photos-5a77ecc82d28e4.986704661517808840185.png" alt="Picture of Jupiter" height="50px" width="50px"><span id="cursorJupiter"> 0 </span></p>
+        <p>Buy Mars: <span id="costMars"> 100 clicks</span><img id="imgMars" onclick="buyMars()" src="./Images/mars-18087.png" alt="" height="30px" width="30px"><span id="cursorMars">  0 </span></p>
+        <p>Buy Saturn: <span id="costSaturn"> 500 clicks</span><img id="imsaturn" onclick="buySaturn()" src="./Images/PikPng.com_saturn-png_513593.png" alt="" height="50px" width="50px"><span id="cursorSaturn">  0 </span></p>
+        <p>Buy Sun: <span id="costSun">1000 clicks</span><img id="imSun" src="./Images/sun.png" onclick="buySun()" alt="Picture of the sun" height="50px" width="50px"><span id="cursorSun">  0 </span></p>
     </aside>
     <footer class="footer">
     <h1>Keep on clicking into the galaxy and beyond!</h1>
