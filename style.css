@@ -115,3 +115,9 @@ button{
 
 }
 }
+@media all and (min-width: 800px) and (max-width: 884px){
+    .aside1, p{
+        display: flex;
+        flex-direction: column;
+    }
+}
